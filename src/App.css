@@ -1,0 +1,154 @@
+:root{
+  --shadow:0 5px 10px rgba(0, 0, 0, 0.5);
+  --bg01: #97a7aa;
+  --bg02: #97a7aa;
+  --font01: #0f0e0e;
+}
+
+
+.App {
+  background-color: var(--bg02);
+  height: auto;
+  width: 100%;
+}
+
+.header {
+  box-shadow:var(--shadow);
+  background-color: var(--bg01);
+  min-width: 100%;
+  position:fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+
+}
+
+.bar {
+  width: 80%;
+  background-color: var(--bg01);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5em;
+}
+
+.header h1 {
+  color: var(--font01);
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  transform: translateY(10px);
+}
+
+.container {
+  margin: auto;
+  background-color: var(--bg02);
+  padding-top: 6em;
+  padding-bottom: 2em; 
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 17.5em;
+  height: 30.5em;
+  box-sizing: border-box;
+  background-color: var(--bg01);
+  box-shadow:var(--shadow);
+  margin: 1em;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.poster {
+  width:100%
+}
+
+.movie-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.movie-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.movie-box .title {
+  text-align: center;
+}
+
+.description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 100%;
+  background-color: var(--bg02);
+  opacity: 0.9;
+  box-sizing: border-box;
+  padding: 1em;
+  transition: all 0.4s ease-in-out;
+  overflow-y: auto;
+  transform: translateY(100%);
+  z-index: 1;
+}
+
+.movie-details:hover .description {
+  transform: translateY(0%);
+}
+
+.addButton {
+  width: 17.5em;
+  box-sizing: border-box;
+  background-color: var(--bg01);
+  box-shadow:var(--shadow);
+  margin: 1em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addButton button{
+  background-color: var(--font01);
+  font-style: bold;
+  color: white;
+  border-style: none;
+  font-size: larger;
+  box-shadow:var(--shadow);
+  margin: 1em;
+}
+
+.movieContainer {
+  margin: auto;
+  background-color: var(--bg02);
+  padding-top: 7em;
+  padding-bottom: 2em; 
+  width: 80%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.movieContainer p {
+  width: 60%;
+}
+
+.trailerbox {
+  padding:6em
+}
